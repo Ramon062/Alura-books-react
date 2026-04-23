@@ -3,11 +3,22 @@ import styled from 'styled-components'
 
 const LogoContainer = styled.div`
     display: flex;
-    font-size: 30px;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    white-space: nowrap;
+
+    p {
+        margin: 0;
+    }
+
+    @media (max-width: 900px) {
+        font-size: 24px;
+    }
 `
 
 const LogoImage = styled.img`
-    margin-right: 10px;
+    display: block;
 `
 
 function Logo() {
